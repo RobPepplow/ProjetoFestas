@@ -1,0 +1,107 @@
+POST http://localhost:3030/api/services
+Content-Type: application/json
+
+{
+    "name": "teste2",
+    "description": "teste2",
+    "price": 1800,
+    "image": "https://unsplash.com/pt-br/fotografias/OqtafYT5kTw"
+}
+
+###
+
+GET http://localhost:3030/api/services
+
+###
+
+GET http://localhost:3030/api/services/63d71cb528a2becb34cc5e82
+
+###
+
+DELETE  http://localhost:3030/api/services/63d71c4628a2becb34cc5e7b
+
+###
+
+PUT http://localhost:3030/api/services/63d71ca128a2becb34cc5e72
+Content-Type: application/json
+
+{
+    "name": "alterado",
+    "description": "teste2",
+    "price": 1800,
+    "image": "https://unsplash.com/pt-br/fotografias/OqtafYT5kTw"
+}
+
+###
+
+POST http://localhost:3030/api/parties
+Content-Type: application/json
+
+{
+    "title": "Festa 15 Anos Camily",
+    "author": "Robson",
+    "description": "Uma festa de Aniversario",
+    "budget": 1000,
+    "image": "https://unsplash.com/pt-br/fotografias/OqtafYT5kTw"
+    
+}
+
+###
+
+POST http://localhost:3030/api/parties
+Content-Type: application/json
+
+{
+    "title": "Festa 15 Anos Camily",
+    "author": "Robson",
+    "description": "Uma festa de Aniversario",
+    "budget": 3000,
+    "image": "https://unsplash.com/pt-br/fotografias/OqtafYT5kTw",
+    "services":[
+        {
+        "name": "Serviço de Bar",
+        "description": "Serviço de bar",
+        "price": 1000,
+        "image": "https://unsplash.com/pt-br/fotografias/OqtafYT5kTw"
+        },
+        {
+        "name": "Buffet",
+        "description": "Buffet",
+        "price": 1500,
+        "image": "https://unsplash.com/pt-br/fotografias/OqtafYT5kTw"
+        }
+    ]
+    
+}
+
+###
+
+GET http://localhost:3030/api/parties
+
+###
+
+GET http://localhost:3030/api/parties/63d835b7e9736748c1cf373a
+
+###
+
+DELETE  http://localhost:3030/api/parties/63d834e8a0555ab15ad29d3a
+
+###
+
+POST http://localhost:3030/api/users
+Content-Type: application/json
+
+{
+    "nome": "Amanda Ribeiro Pepplow Lopes",
+    "email": "amandinhapepplow@gmail.com",
+    "fone": 41998102337,
+    "data_nascimento": "2012-01-01T00:00:00.000Z"
+}
+
+###
+
+GET  http://localhost:3030/api/users
+
+###
+
+DELETE  http://localhost:3030/api/users/63dc66b822e6cf1347c3f4e1
